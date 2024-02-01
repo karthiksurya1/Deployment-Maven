@@ -9,8 +9,8 @@ pipeline {
 	
 	stage('Build'){
 		steps{
-			//sh "mvn clean install -Dmaven.test.skip=true"
-			sh "mvn clean package"
+			sh "mvn clean install -Dmaven.test.skip=true"
+			//sh "mvn clean package"
 		}
 	}
 	
