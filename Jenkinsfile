@@ -22,7 +22,7 @@ pipeline {
 	
 	stage('deployment'){
 		steps{
-		deploy adapters: [tomcat9(url: 'http://172.17.0.1:8081/', 
+		deploy adapters: [tomcat9(url: 'http://localhost:8081/', 
                               credentialsId: 'tomcatuser')], 
                      war: 'target/*.war',
                      contextPath: 'app'
